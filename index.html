@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIJJJSQ7 Solutions LLC | Strategic Consulting</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">AIJJJSQ7<span>Solutions</span></div>
+                <div class="mobile-menu" onclick="toggleMenu()">☰</div>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="nav-right">
+                    <div class="nav-phone">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>(800) 375-2788</span>
+                    </div>
+                    <div class="nav-auth">
+                        <a href="login.html" class="login-btn">Login</a>
+                        <a href="signup.html" class="signup-btn">Sign Up</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Strategic Business Solutions</h1>
+            <p>Transforming challenges into opportunities through data-driven insights and innovative strategies</p>
+            <button class="cta-button" onclick="scrollToContact()">Get Started</button>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <h3>Market Research</h3>
+                    <p>Comprehensive data analysis and competitive intelligence to guide your business decisions</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-handshake"></i>
+                    </div>
+                    <h3>Management Consulting</h3>
+                    <p>Strategic planning and operational improvements to maximize organizational performance</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-lightbulb"></i>
+                    </div>
+                    <h3>Innovation Strategy</h3>
+                    <p>Developing cutting-edge solutions and digital transformation roadmaps</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-users-gear"></i>
+                    </div>
+                    <h3>Business Operations</h3>
+                    <p>Optimizing processes and implementing efficient operational frameworks</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="section values">
+        <div class="container">
+            <h2>Our Core Values</h2>
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h3>Excellence</h3>
+                    <p>Striving for the highest standards in everything we do</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fa-solid fa-handshake"></i>
+                    </div>
+                    <h3>Integrity</h3>
+                    <p>Building trust through honest and ethical business practices</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fa-solid fa-rocket"></i>
+                    </div>
+                    <h3>Innovation</h3>
+                    <p>Embracing new ideas and creative solutions</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section testimonials">
+        <div class="container">
+            <h2>What Our Clients Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <i class="fa-solid fa-quote-left"></i>
+                        <p>"AIJJJSQ7 Solutions transformed our business operations, resulting in a 40% increase in efficiency."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>John Smith</h4>
+                            <p>CEO, Tech Innovations</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <i class="fa-solid fa-quote-left"></i>
+                        <p>"Their strategic insights helped us navigate market challenges and achieve sustainable growth."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>Sarah Johnson</h4>
+                            <p>Director, Global Solutions</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <h2>Our Mission</h2>
+                    <div class="mission-box">
+                        <i class="fa-solid fa-rocket mission-icon"></i>
+                        <p class="mission-statement">"Become an anomaly for success, be a light in the midst of darkness, use business to be the solution and not the problem."</p>
+                    </div>
+                    
+                    <div class="vision-box">
+                        <div class="vision-header">
+                            <i class="fa-solid fa-binoculars vision-icon"></i>
+                            <h2>Our Vision</h2>
+                        </div>
+                        <p class="vision-statement">"To go to heights never achieved"</p>
+                        <div class="vision-pillars">
+                            <div class="pillar">
+                                <i class="fa-solid fa-chart-line"></i>
+                                <span>Growth</span>
+                            </div>
+                            <div class="pillar">
+                                <i class="fa-solid fa-lightbulb"></i>
+                                <span>Innovation</span>
+                            </div>
+                            <div class="pillar">
+                                <i class="fa-solid fa-handshake"></i>
+                                <span>Partnership</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-stack">
+                        <div class="image-box primary">
+                            <i class="fa-solid fa-building fa-3x"></i>
+                        </div>
+                        <div class="image-box secondary">
+                            <i class="fa-solid fa-chart-pie fa-3x"></i>
+                        </div>
+                        <div class="image-box tertiary">
+                            <i class="fa-solid fa-users fa-3x"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <p><strong>Phone:</strong> (800) 375-2788</p>
+                    <p><strong>Address:</strong> 2014 Capitol Ave, Sacramento, CA 95811 ste 100</p>
+                </div>
+                <form class="contact-form" onsubmit="handleSubmit(event)">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" required></textarea>
+                    <button type="submit" class="cta-button">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms and Condition</a></li>
+                    <li><a href="refund.html">Return and Refund Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Services</h3>
+                <ul>
+                    <li>Market Reserach</li>
+                    <li>Management Consulting</li>
+                    
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect us</h3>
+                <div class="contact-info">
+                    <p>
+                        <strong>AIJJJSQ7 SOLUTIONS LLC</strong><br>
+                        2014 Capitol Ave, Ste 100<br>
+                        Sacramento, CA 95811
+                    </p>
+                    <p>
+                        <strong>Phone:</strong> (800) 375-2788<br>
+                        Mon-Fri, 9am-6pm EST
+                    </p>
+                    <p>
+                        <strong>Email:</strong> contact@aijjjsq7solutions.com
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="social-links">
+            <a href="#" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#" class="social-icon" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
+            <a href="#" class="social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-icon" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 AIJJJSQ7 Solutions LLC. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Font Awesome for social icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Inline JavaScript -->
+    <script>
+        function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+        }
+
+        function scrollToContact() {
+            document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function handleSubmit(event) {
+            event.preventDefault();
+            alert('Thank you for your message! We will contact you soon.');
+            event.target.reset();
+        }
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                if (window.innerWidth <= 768) {
+                    document.getElementById('navLinks').style.display = 'none';
+                }
+            });
+        });
+
+        // Responsive menu handling
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 768) {
+                document.getElementById('navLinks').style.display = 'flex';
+            }
+        });
+    </script>
+</body>
+</html>
