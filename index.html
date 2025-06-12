@@ -15,7 +15,10 @@
     <header>
         <div class="container">
             <nav>
-                <div class="logo">AIJJJSQ7<span>Solutions</span></div>
+            <a href="index.html" class="logo">
+  <img src="aij logo.png" alt="AIJJJSQ7 Solutions Logo" height="40">
+</a>
+
                 <div class="mobile-menu" onclick="toggleMenu()">☰</div>
                 <ul class="nav-links" id="navLinks">
                     <li><a href="#" class="active">Home</a></li>
@@ -47,144 +50,268 @@
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="services" class="section services">
-        <div class="container">
-            <h2>Our Services</h2>
-            <div class="services-grid">
-                <div class="service-card">
+<!-- Enhanced Services Section -->
+<section id="services" class="section services">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-subtitle">What We Offer</span>
+            <h2 class="section-title">Our <span class="highlight">Premium</span> Services</h2>
+            <div class="section-divider">
+                <div class="divider-line"></div>
+                <div class="divider-icon">
+                    <svg viewBox="0 0 100 100" class="spinning-star">
+                        <polygon points="50,5 63,40 98,40 70,62 80,95 50,75 20,95 30,62 2,40 37,40" fill="currentColor"/>
+                    </svg>
+                </div>
+                <div class="divider-line"></div>
+            </div>
+            <p class="section-description">We deliver exceptional value through our comprehensive suite of professional services</p>
+        </div>
+        
+        <div class="services-grid">
+            <!-- Service Card 1 with animated background -->
+            <div class="service-card" data-tilt data-tilt-scale="1.05" data-tilt-glare data-tilt-max-glare="0.2">
+                <div class="card-bg-pattern"></div>
+                <div class="service-content">
                     <div class="service-icon">
-                        <i class="fa-solid fa-chart-line"></i>
+                        <div class="icon-wrapper">
+                            <i class="fa-solid fa-chart-line"></i>
+                            <div class="icon-halo"></div>
+                        </div>
                     </div>
                     <h3>Market Research</h3>
                     <p>Comprehensive data analysis and competitive intelligence to guide your business decisions</p>
+                    <div class="service-hover-content">
+                        <ul class="service-features">
+                            <li><i class="fa-solid fa-check"></i> Industry analysis</li>
+                            <li><i class="fa-solid fa-check"></i> Consumer insights</li>
+                            <li><i class="fa-solid fa-check"></i> Trend forecasting</li>
+                        </ul>
+                        <a href="#" class="service-link">
+                            <span>Learn more</span>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
                 </div>
-                <div class="service-card">
+                <div class="service-badge">
+                    <span>Popular</span>
+                    <div class="badge-pulse"></div>
+                </div>
+                <div class="service-card-glow"></div>
+            </div>
+            
+            <!-- Service Card 2 -->
+            <div class="service-card" data-tilt data-tilt-scale="1.05" data-tilt-glare data-tilt-max-glare="0.2">
+                <div class="card-bg-pattern"></div>
+                <div class="service-content">
                     <div class="service-icon">
-                        <i class="fa-solid fa-handshake"></i>
+                        <div class="icon-wrapper">
+                            <i class="fa-solid fa-handshake"></i>
+                            <div class="icon-halo"></div>
+                        </div>
                     </div>
                     <h3>Management Consulting</h3>
                     <p>Strategic planning and operational improvements to maximize organizational performance</p>
+                    <div class="service-hover-content">
+                        <ul class="service-features">
+                            <li><i class="fa-solid fa-check"></i> Business strategy</li>
+                            <li><i class="fa-solid fa-check"></i> Process optimization</li>
+                            <li><i class="fa-solid fa-check"></i> Change management</li>
+                        </ul>
+                        <a href="#" class="service-link">
+                            <span>Learn more</span>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
                 </div>
+                <div class="service-card-glow"></div>
+            </div>
             
-                <div class="service-card">
+            <!-- Service Card 3 -->
+            <div class="service-card" data-tilt data-tilt-scale="1.05" data-tilt-glare data-tilt-max-glare="0.2">
+                <div class="card-bg-pattern"></div>
+                <div class="service-content">
                     <div class="service-icon">
-                        <i class="fa-solid fa-users-gear"></i>
+                        <div class="icon-wrapper">
+                            <i class="fa-solid fa-users-gear"></i>
+                            <div class="icon-halo"></div>
+                        </div>
                     </div>
                     <h3>Business Operations</h3>
                     <p>Optimizing processes and implementing efficient operational frameworks</p>
+                    <div class="service-hover-content">
+                        <ul class="service-features">
+                            <li><i class="fa-solid fa-check"></i> Workflow automation</li>
+                            <li><i class="fa-solid fa-check"></i> Performance metrics</li>
+                            <li><i class="fa-solid fa-check"></i> Quality control</li>
+                        </ul>
+                        <a href="#" class="service-link">
+                            <span>Learn more</span>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
                 </div>
+                <div class="service-card-glow"></div>
             </div>
         </div>
-    </section>
+        
+        <div class="section-cta">
+            <div class="cta-content">
+                <p>Ready to transform your business?</p>
+                <a href="#contact" class="btn btn-primary btn-icon">
+                    <span>Get Started</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="cta-particles"></div>
+        </div>
+    </div>
+    <div class="section-bg-shapes">
+        <div class="shape-1"></div>
+        <div class="shape-2"></div>
+        <div class="shape-3"></div>
+    </div>
+</section>
 
-    <!-- Values Section -->
-    <section class="section values">
-        <div class="container">
-            <h2>Our Core Values</h2>
-            <div class="values-grid">
-                <div class="value-card">
-                    <div class="value-icon">
+<!-- Enhanced Values Section -->
+<section class="section values">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-subtitle">Our Foundation</span>
+            <h2 class="section-title">Core <span class="highlight">Values</span></h2>
+            <div class="section-divider">
+                <div class="divider-line"></div>
+                <div class="divider-icon">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <div class="divider-line"></div>
+            </div>
+            <p class="section-description">The principles that guide every decision we make and action we take</p>
+        </div>
+        
+        <div class="values-grid">
+            <div class="value-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="value-icon-container">
+                    <div class="value-icon-wrapper">
                         <i class="fa-solid fa-star"></i>
+                        <div class="value-icon-halo"></div>
                     </div>
-                    <h3>Excellence</h3>
-                    <p>Striving for the highest standards in everything we do</p>
+                    <div class="value-icon-pulse"></div>
                 </div>
-                <div class="value-card">
-                    <div class="value-icon">
+                <h3>Excellence</h3>
+                <p>Striving for the highest standards in everything we do</p>
+                <div class="value-card-glow"></div>
+            </div>
+            
+            <div class="value-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="value-icon-container">
+                    <div class="value-icon-wrapper">
                         <i class="fa-solid fa-handshake"></i>
+                        <div class="value-icon-halo"></div>
                     </div>
-                    <h3>Integrity</h3>
-                    <p>Building trust through honest and ethical business practices</p>
+                    <div class="value-icon-pulse"></div>
                 </div>
-                <div class="value-card">
-                    <div class="value-icon">
+                <h3>Integrity</h3>
+                <p>Building trust through honest and ethical business practices</p>
+                <div class="value-card-glow"></div>
+            </div>
+            
+            <div class="value-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="value-icon-container">
+                    <div class="value-icon-wrapper">
                         <i class="fa-solid fa-rocket"></i>
+                        <div class="value-icon-halo"></div>
                     </div>
-                    <h3>Innovation</h3>
-                    <p>Embracing new ideas and creative solutions</p>
+                    <div class="value-icon-pulse"></div>
                 </div>
+                <h3>Innovation</h3>
+                <p>Embracing new ideas and creative solutions</p>
+                <div class="value-card-glow"></div>
             </div>
         </div>
-    </section>
+    </div>
+    <div class="values-bg-shapes">
+        <div class="value-shape-1"></div>
+        <div class="value-shape-2"></div>
+    </div>
+</section>
 
-    <!-- Testimonials Section
-    <section class="section testimonials">
-        <div class="container">
-            <h2>What Our Clients Say</h2>
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        <i class="fa-solid fa-quote-left"></i>
-                        <p>"AIJJJSQ7 Solutions transformed our business operations, resulting in a 40% increase in efficiency."</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <div class="author-info">
-                            <h4>John Smith</h4>
-                            <p>CEO, Tech Innovations</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        <i class="fa-solid fa-quote-left"></i>
-                        <p>"Their strategic insights helped us navigate market challenges and achieve sustainable growth."</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <div class="author-info">
-                            <h4>Sarah Johnson</h4>
-                            <p>Director, Global Solutions</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
-    <!-- Enhanced About Section with Wow Factor -->
+<!-- Enhanced About Section -->
 <section id="about" class="section about">
     <div class="container">
-        <div class="about-header" data-aos="fade-up">
-            <h2 class="section-title">Our Core Beliefs</h2>
-            <p class="section-subtitle">Driving innovation through purpose and vision</p>
+        <div class="about-header">
+            <span class="section-subtitle">Our Philosophy</span>
+            <h2 class="section-title">Core <span class="highlight">Beliefs</span></h2>
+            <div class="section-divider">
+                <div class="divider-line"></div>
+                <div class="divider-icon">
+                    <i class="fa-solid fa-lightbulb"></i>
+                </div>
+                <div class="divider-line"></div>
+            </div>
+            <p class="section-description">Driving innovation through purpose and vision</p>
         </div>
         
         <div class="beliefs-grid">
             <!-- Mission Column -->
-            <div class="belief-column mission-column" data-aos="fade-right">
-                <div class="belief-card">
+            <div class="belief-column mission-column">
+                <div class="belief-card" data-aos="fade-right">
                     <div class="belief-icon-container">
-                        <i class="fa-solid fa-rocket belief-icon"></i>
-                        <div class="icon-orb"></div>
+                        <div class="belief-icon-wrapper">
+                            <i class="fa-solid fa-rocket"></i>
+                            <div class="belief-icon-halo"></div>
+                        </div>
+                        <div class="belief-icon-pulse"></div>
                     </div>
                     <h3 class="belief-title">Our Mission</h3>
-                    <div class="divider"></div>
+                    <div class="divider">
+                        <div class="divider-line"></div>
+                        <div class="divider-dot"></div>
+                        <div class="divider-line"></div>
+                    </div>
                     <p class="belief-statement">"To become an anomaly of success — a guiding light amid darkness — and to use business as a force for solutions, not problems."</p>
                     <div class="mission-glow"></div>
                 </div>
             </div>
             
             <!-- Center Graphic -->
-            <div class="center-graphic" data-aos="zoom-in">
-                <div class="graphic-circle">
+            <div class="center-graphic">
+                <div class="graphic-circle" data-aos="zoom-in">
                     <div class="inner-circle">
                         <i class="fa-solid fa-star"></i>
                     </div>
                     <div class="pulsating-ring"></div>
                     <div class="pulsating-ring delay-1"></div>
                     <div class="pulsating-ring delay-2"></div>
+                    <div class="connecting-line mission-line"></div>
+                    <div class="connecting-line vision-line"></div>
                 </div>
             </div>
             
             <!-- Vision Column -->
-            <div class="belief-column vision-column" data-aos="fade-left">
-                <div class="belief-card">
+            <div class="belief-column vision-column">
+                <div class="belief-card" data-aos="fade-left">
                     <div class="belief-icon-container">
-                        <i class="fa-solid fa-binoculars belief-icon"></i>
-                        <div class="icon-orb"></div>
+                        <div class="belief-icon-wrapper">
+                            <i class="fa-solid fa-binoculars"></i>
+                            <div class="belief-icon-halo"></div>
+                        </div>
+                        <div class="belief-icon-pulse"></div>
                     </div>
                     <h3 class="belief-title">Our Vision</h3>
-                    <div class="divider"></div>
+                    <div class="divider">
+                        <div class="divider-line"></div>
+                        <div class="divider-dot"></div>
+                        <div class="divider-line"></div>
+                    </div>
                     <p class="belief-statement">"To push beyond the horizon and achieve the impossible."</p>
                     
                     <div class="vision-pillars">
@@ -215,27 +342,124 @@
             </div>
         </div>
     </div>
+    <div class="about-bg-shapes">
+        <div class="about-shape-1"></div>
+        <div class="about-shape-2"></div>
+        <div class="about-shape-3"></div>
+    </div>
 </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section contact">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <div class="contact-grid">
-                <div class="contact-info">
-                    <h3>Get in Touch</h3>
-                    <p><strong>Phone:</strong> (800) 375-2788</p>
-                    <p><strong>Address:</strong> 2014 Capitol Ave, Sacramento, CA 95811 ste 100</p>
+<!-- Enhanced Contact Section -->
+<section id="contact" class="section contact">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-subtitle">Get In Touch</span>
+            <h2 class="section-title">Contact <span class="highlight">Us</span></h2>
+            <div class="section-divider">
+                <div class="divider-line"></div>
+                <div class="divider-icon">
+                    <i class="fa-solid fa-envelope"></i>
                 </div>
+                <div class="divider-line"></div>
+            </div>
+            <p class="section-description">Have questions or ready to start your project? Reach out to our team</p>
+        </div>
+        
+        <div class="contact-grid">
+            <div class="contact-info" data-aos="fade-right">
+                <div class="info-card">
+                    <h3>Connect With Us</h3>
+                    
+                    <div class="contact-method">
+                        <div class="method-icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div class="method-content">
+                            <h4>Phone</h4>
+                            <a href="tel:8003752788">(800) 375-2788</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <div class="method-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div class="method-content">
+                            <h4>Address</h4>
+                            <address>2014 Capitol Ave, Sacramento, CA 95811 ste 100</address>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <div class="method-icon">
+                            <i class="fa-solid fa-clock"></i>
+                        </div>
+                        <div class="method-content">
+                            <h4>Business Hours</h4>
+                            <p>Monday - Friday: 9am - 5pm</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-info-glow"></div>
+            </div>
+            
+            <div class="contact-form-container" data-aos="fade-left">
                 <form class="contact-form" onsubmit="handleSubmit(event)">
-                    <input type="text" placeholder="Your Name" required>
-                    <input type="email" placeholder="Your Email" required>
-                    <textarea placeholder="Your Message" required></textarea>
-                    <button type="submit" class="cta-button">Send Message</button>
+                    <div class="form-group">
+                        <input type="text" id="name" required>
+                        <label for="name">Your Name</label>
+                        <div class="form-underline"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="email" id="email" required>
+                        <label for="email">Your Email</label>
+                        <div class="form-underline"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="text" id="subject" required>
+                        <label for="subject">Subject</label>
+                        <div class="form-underline"></div>
+                    </div>
+                    
+                    <div class="form-group textarea-group">
+                        <textarea id="message" required></textarea>
+                        <label for="message">Your Message</label>
+                        <div class="form-underline"></div>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-icon">
+                        <span>Send Message</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22 2L11 13M22 2L15 22L11 13M11 13L2 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
                 </form>
+                <div class="contact-form-glow"></div>
             </div>
         </div>
-    </section>
+    </div>
+    <div class="contact-bg-shapes">
+        <div class="contact-shape-1"></div>
+        <div class="contact-shape-2"></div>
+    </div>
+</section>
 
     <!-- Footer -->
     <footer>
@@ -282,7 +506,7 @@
             <a href="#" class="social-icon" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
         </div>
         <div class="copyright">
-            <p>&copy; 2023 AIJJJSQ7 Solutions LLC. All rights reserved.</p>
+            <p>&copy; 2025 AIJJJSQ7 Solutions LLC. All rights reserved.</p>
         </div>
     </footer>
 
