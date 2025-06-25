@@ -3,12 +3,11 @@ import { User } from "../models/userModel.js";
 import { validateAndFormatPhoneNumber } from "../utils/phoneUtils.js";
 import jwt from "jsonwebtoken";
 import bcrypt from "bcrypt";
-
 export const registerUser = async (req, res) => {
   try {
-    const { firstName, lastName, email, password, confirmPassword, contactNumber, dob } = req.body;
+    const { firstName, lastName, email, password, confirmPassword, company } = req.body;
 
-    if (!firstName || !lastName || !email || !password || !confirmPassword || !contactNumber || !dob) {
+    if (!firstName || !lastName || !email || !password || !confirmPassword || !company) {
       return res.status(400).json({ message: "All fields are required" });
     }
 
@@ -21,15 +20,12 @@ export const registerUser = async (req, res) => {
       return res.status(400).json({ message: "User already exists" });
     }
 
-    const formattedPhone = validateAndFormatPhoneNumber(contactNumber);
-
     const user = await User.create({
       firstName,
       lastName,
       email,
-      password,
-      contactNumber: formattedPhone,
-      dob,
+      company,
+      password  // Only this is stored
     });
 
     return res.status(201).json({
@@ -38,13 +34,17 @@ export const registerUser = async (req, res) => {
         _id: user._id,
         email: user.email,
         firstName: user.firstName,
-        lastName: user.lastName
+        lastName: user.lastName,
+        company: user.company
       }
     });
   } catch (error) {
+    console.error("Register error:", error);
     return res.status(500).json({ message: error.message });
   }
 };
+
+
 
 export const loginUser = async (req, res) => {
   try {
