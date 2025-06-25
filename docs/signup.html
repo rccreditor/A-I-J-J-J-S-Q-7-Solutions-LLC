@@ -35,12 +35,13 @@
           <div class="nav-right">
             <div class="nav-phone">
               <i class="fa-solid fa-phone"></i>
-              <span>(800) 375-2788</span>
+              <span>800-338-2850</span>
             </div>
             <div class="nav-auth">
-              <button class="login-btn">Login</button>
-              <button class="signup-btn">Sign Up</button>
-            </div>
+  <button class="login-btn" onclick="window.location.href='login.html'">Login</button>
+  <button class="signup-btn" onclick="window.location.href='signup.html'">Sign Up</button>
+</div>
+
           </div>
         </nav>
       </div>
@@ -216,7 +217,7 @@
               Sacramento, CA 95811
             </p>
             <p>
-              <strong>Phone:</strong> (800) 375-2788<br />
+              <strong>Phone:</strong> 800-338-2850<br />
               Mon-Fri, 9am-6pm EST
             </p>
             <p><strong>Email:</strong> contact@aijjjsq7solutions.com</p>
@@ -267,43 +268,57 @@
           toggleButton.classList.add("fa-eye");
         }
       }
+async function handleSignup(event) {
+  event.preventDefault();
 
-      function handleSignup(event) {
-        event.preventDefault();
+  const firstName = document.getElementById("firstName").value.trim();
+  const lastName = document.getElementById("lastName").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const company = document.getElementById("company").value.trim();
+  const password = document.getElementById("password").value;
+  const confirmPassword = document.getElementById("confirmPassword").value;
+  const terms = document.querySelector('input[name="terms"]').checked;
 
-        const firstName = document.getElementById("firstName").value;
-        const lastName = document.getElementById("lastName").value;
-        const email = document.getElementById("email").value;
-        const company = document.getElementById("company").value;
-        const password = document.getElementById("password").value;
-        const confirmPassword =
-          document.getElementById("confirmPassword").value;
-        const terms = document.querySelector('input[name="terms"]').checked;
+  if (password !== confirmPassword) {
+    alert("Passwords do not match!");
+    return;
+  }
 
-        // Basic validation
-        if (password !== confirmPassword) {
-          alert("Passwords do not match!");
-          return;
-        }
+  if (!terms) {
+    alert("Please accept the Terms and Conditions");
+    return;
+  }
 
-        if (!terms) {
-          alert("Please accept the Terms and Conditions");
-          return;
-        }
+  try {
+    const response = await fetch("http://localhost:8000/api/auth/signup", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        firstName,
+        lastName,
+        email,
+        company,
+        password,
+        confirmPassword,
+      }),
+    });
 
-        // Here you would typically send this data to your backend
-        console.log("Signup attempt:", {
-          firstName,
-          lastName,
-          email,
-          company,
-          password,
-          terms,
-        });
+    const data = await response.json();
 
-        // For demo purposes, show success message
-        alert("Account created successfully! (Demo only)");
-      }
+    if (response.ok) {
+      alert("Account created successfully!");
+      window.location.href = "login.html"; // redirect after success
+    } else {
+      alert(`Signup failed: ${data.message || "Unknown error"}`);
+    }
+  } catch (error) {
+    console.error("Signup error:", error);
+    alert("Something went wrong. Please try again later.");
+  }
+}
+
 
       // Close mobile menu when clicking on a link
       document.querySelectorAll(".nav-links a").forEach((link) => {

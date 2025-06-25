@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>User Dashboard - AIJJJSQ7</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "#0c4a6e",
+            accent: "#38bdf8",
+          },
+        },
+      },
+    };
+  </script>
+</head>
+<body class="bg-gray-100 font-sans">
+  <div class="flex min-h-screen">
+    <!-- Sidebar -->
+    <aside class="w-64 bg-primary text-white flex flex-col p-6 space-y-6">
+      <div>
+        <h1 class="text-2xl font-bold">AIJJJSQ7</h1>
+        <p class="text-sm text-accent">Solutions LLC</p>
+      </div>
+      <nav class="space-y-3">
+        <a href="#" class="block py-2 px-4 rounded bg-accent text-black font-semibold">Dashboard</a>
+        <a href="#" class="block py-2 px-4 hover:bg-accent hover:text-black">My Services</a>
+        <a href="#" class="block py-2 px-4 hover:bg-accent hover:text-black">Messages</a>
+        <a href="#" class="block py-2 px-4 hover:bg-accent hover:text-black">Settings</a>
+        <a href="#" class="block py-2 px-4 hover:bg-accent hover:text-black">Support</a>
+      </nav>
+      <button
+        onclick="logoutUser()"
+        class="mt-auto py-2 px-4 bg-red-500 hover:bg-red-600 text-white rounded text-sm"
+      >
+        Logout
+      </button>
+    </aside>
+
+    <!-- Main content -->
+    <main class="flex-1 p-6 space-y-6">
+      <!-- Welcome -->
+      <section class="bg-white p-6 rounded shadow">
+        <h2 class="text-2xl font-bold text-gray-800">Welcome, Prerna 👋</h2>
+        <p class="text-gray-600">Here’s what’s happening with your account today.</p>
+      </section>
+
+      <!-- Stats -->
+      <section class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div class="bg-white p-4 rounded shadow">
+          <h3 class="text-gray-500 text-sm">Active Services</h3>
+          <p class="text-2xl font-bold text-primary">3</p>
+        </div>
+        <div class="bg-white p-4 rounded shadow">
+          <h3 class="text-gray-500 text-sm">Unread Messages</h3>
+          <p class="text-2xl font-bold text-primary">2</p>
+        </div>
+        <div class="bg-white p-4 rounded shadow">
+          <h3 class="text-gray-500 text-sm">Support Tickets</h3>
+          <p class="text-2xl font-bold text-primary">1</p>
+        </div>
+      </section>
+
+      <!-- Activity & Announcements -->
+      <section class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <!-- Recent Activity -->
+        <div class="bg-white p-4 rounded shadow">
+          <h3 class="text-xl font-bold mb-4">Recent Activity</h3>
+          <ul class="text-sm text-gray-700 space-y-2">
+            <li>✅ Company profile updated</li>
+            <li>📦 Service request submitted</li>
+            <li>📧 Message from advisor received</li>
+          </ul>
+        </div>
+
+        <!-- Company Updates -->
+        <div class="bg-white p-4 rounded shadow">
+          <h3 class="text-xl font-bold mb-4">Company Announcements</h3>
+          <ul class="text-sm text-gray-700 space-y-2">
+            <li>🚀 New business growth course launched!</li>
+            <li>📊 System upgrade planned for July 1</li>
+            <li>💡 Tips on optimizing your consulting services</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Profile Section -->
+      <section class="bg-white p-4 rounded shadow">
+        <h3 class="text-xl font-bold mb-4">Your Profile</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <p><strong>Name:</strong> Prerna Mishra</p>
+          <p><strong>Email:</strong> prerna@creditoracademy.com</p>
+          <p><strong>Company:</strong> Creditor Academy</p>
+        </div>
+        <button
+          class="mt-4 py-2 px-4 bg-accent text-black font-semibold rounded hover:bg-blue-300"
+        >
+          Edit Profile
+        </button>
+      </section>
+    </main>
+  </div>
+
+  <!-- Logout JS -->
+  <script>
+    function logoutUser() {
+      alert("You have been logged out.");
+      window.location.href = "login.html";
+    }
+  </script>
+</body>
+</html>
